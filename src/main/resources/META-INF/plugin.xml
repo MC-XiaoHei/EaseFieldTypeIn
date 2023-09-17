@@ -1,18 +1,14 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.mcxiaohei.easefieldtypein</id>
-    <name>EaseFieldTypeIn Template</name>
-    <vendor>mc-xiaohei</vendor>
+    <id>cn.xor7.easefieldtypein</id>
+    <name>EaseFieldTypeIn</name>
+    <vendor>Xor7Studio</vendor>
+    <description>The "EaseFieldTypeIn" plugin can assist developers in quickly and efficiently inputting Kotlin fields. EaseFieldTypeIn插件能帮助开发者快速高效的输入Kotlin字段</description>
 
-    <depends>com.intellij.modules.platform</depends>
-
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <depends>org.jetbrains.kotlin</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.mcxiaohei.easefieldtypein.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <completion.contributor implementationClass="cn.xor7.easefieldtypein.KotlinFieldCompletionContributor"
+                                language="kotlin"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.mcxiaohei.easefieldtypein.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>
