@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>cn.xor7.easefieldtypein</id>
     <name>EaseFieldTypeIn</name>
-    <vendor>Xor7Studio</vendor>
+    <vendor>MC_XiaoHei</vendor>
     <description>The "EaseFieldTypeIn" plugin can assist developers in quickly and efficiently inputting Kotlin fields. EaseFieldTypeIn插件能帮助开发者快速高效的输入Kotlin字段</description>
 
     <depends>org.jetbrains.kotlin</depends>
