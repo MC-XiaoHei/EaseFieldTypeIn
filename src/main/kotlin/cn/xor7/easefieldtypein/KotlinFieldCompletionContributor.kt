@@ -27,7 +27,13 @@ class KotlinFieldCompletionContributor : CompletionContributor() {
             val fragments = javaStyleFieldDeclaration.split(" ").first().split("(?=[A-Z])".toRegex())
             for ((index, _) in fragments.withIndex()) {
                 val completion = fragments.subList(index, fragments.size).joinToString("").decapitalize()
-                result.addElement(LookupElementBuilder.create(completion))
+                if(completion != ""){
+                    result.addElement(
+                        LookupElementBuilder
+                            .create(completion)
+                            .withInsertHandler(KotlinFieldInsertHandler)
+                    )
+                }
             }
         }
     }
