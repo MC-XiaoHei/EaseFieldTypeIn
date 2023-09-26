@@ -3,8 +3,8 @@
 [English](README.md) | [中文](README_CN.md)
 
 ![Build](https://github.com/MC-XiaoHei/EaseFieldTypeIn/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/22772-easefieldtypein.svg)](https://plugins.jetbrains.com/plugin/22772-easefieldtypein)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/22772-easefieldtypein.svg)](https://plugins.jetbrains.com/plugin/22772-easefieldtypein)
 
 #### Make Kotlin 's field typing convenient and quick
 <!-- Plugin description -->
